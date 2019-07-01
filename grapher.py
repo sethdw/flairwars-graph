@@ -27,6 +27,8 @@ ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
 for x in range(2,8):
 	ax.axvline(datetime.datetime(2019,x,1),color="#4f535e")
 
+#NORA = ax.axvline(datetime.datetime(2019,3,10),color="#aaaaaa",label="NORA introduced")
+
 # Plots
 plots = [0]
 plots += [plt.plot(dates,[data[x][2] for x in range(len(data))],color="#aa0000",label="InTheRed")]
@@ -89,7 +91,7 @@ plt.annotate(s="Rainbow Raid 6 - InTheRed (1331 posts)",xy=(datetime.datetime(20
 plt.annotate(s="Biggest raid ever - TheGreenArmy (4786 posts)",xy=(datetime.datetime(2019,4,30),4790),
 			 xytext=(datetime.datetime(2019,1,31),4800),arrowprops=dict(width=1,headwidth=4,headlength=4,color="white"),bbox=dict(facecolor="white",edgecolor="black",boxstyle="round"))
 
-# Display and save
+# Display and savea
 figure = plt.gcf()
 figure.set_size_inches(27,8)
 ax.set_facecolor("#36393f")
