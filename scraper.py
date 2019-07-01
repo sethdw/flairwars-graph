@@ -27,6 +27,6 @@ while cd < now:
 	file.write("\n")
 	file.close()
 
-# file = open("dataFinal.txt","w")
-# file.write(str(data))
-# file.close()
+file = open("dataFinal.txt","w")
+file.write(str(data))
+file.close()
